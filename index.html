@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>template one</title>
+
+    <!--===========  BOX ICON  ===========-->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!--===========  CSS  ===========-->
+    <link rel="stylesheet" href="CSS/resume.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+
+    <!--===========  Bootstrap  ===========-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body class="">
+
+
+<!--===========  page title    ===========-->
+
+<div class="title_page background_img "><span class="cv">CV</span> Generator</div>
+
+<!--===========  HEADER   ===========-->
+
+<header class="header-1" id="header">
+    <nav class="nav bd-container">
+        <a href="#" class="nav__logo" style="text-decoration: none">CV Generator</a>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">
+                        <i class='bx bxs-home-smile nav__icon active-link'></i>Home
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#profile" class="nav__link">
+                        <i class='bx bxs-user-circle nav__icon'></i> Profile
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#education" class="nav__link">
+                        <i class='bx bxs-book nav__icon'></i>Education
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">
+                        <i class='bx bxs-receipt nav__icon'></i>skills
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#experience" class="nav__link">
+                        <i class='bx bxs-briefcase nav__icon'></i>Experience
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#certificate" class="nav__link">
+                        <i class='bx bxs-award nav__icon'></i>Certificate
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#interest" class="nav__link">
+                        <i class='bx bxs-medal nav__icon'></i>INTERESTS
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bxs-grid-alt'></i>
+        </div>
+    </nav>
+</header>
+<div class="page bd-grid  p-container ">
+
+
+    <!--====================          inputs side         ====================-->
+
+
+    <aside class="right__side">
+        <div class="right__container bd-grid">
+
+            <!--===========  personal details inputs   ===========-->
+
+            <div class="section__inputs personal_details purple">
+                <div class="section__head">
+                    <div class="section__inputs__title">personal details</div>
+                    <span class="show__list" id="show__list"><i class='bx bx-chevron-down list__icon'></i></span>
+                </div>
+                <form method="get" action="" class="form__content bd-grid " id="form-content ">
+                    <div class="personal__inputs bd-grid ">
+
+
+                        <div class="row">
+                            <div class="col-md-8 ">
+                                <div class="section__item form-group">
+                                    <label for="full-name">Full Name:</label>
+                                    <input type="text" id="full-name" name="full_name" class="form-control" value=""
+                                           placeholder="Enter your first and last name ">
+                                </div>
+
+                                <div class="section__item form-group">
+                                    <label for="profession">Profession:</label>
+                                    <input type="text" id="profession" name="profession" class="form-control"
+                                           placeholder="Enter job title">
+                                </div>
+                            </div>
+                            <div class="section__item form-group col-md-4 image ">
+                                <img src="assets/images/user.jpg" alt="user_img" class="user_img" id="userImg">
+                                <label for="input-user-img" class="edit__img">
+                                    <i class='bx bxs-edit-alt edit__icon'></i>
+                                </label>
+                                <div class="delete__img" id="delete__img">
+                                    <i class='bx bxs-trash delete__icon'></i>
+                                </div>
+
+                                <input type="file" id="input-user-img" name="user_img" accept="image/*"
+                                       class="input__image">
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="section__item form-group col-md-6">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" class="form-control"
+                                       placeholder="Enter email">
+                            </div>
+
+                            <div class="section__item form-group col-md-6">
+                                <label for="phone">Phone:</label>
+                                <input type="tel" id="phone" name="phone" class="form-control"
+                                       placeholder="Enter phone">
+                            </div>
+
+                        </div>
+
+                        <div class="section__item">
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address" class="form-control"
+                                   placeholder="City, Country">
+                        </div>
+
+                    </div>
+                    <button type="submit" class="save ">save</button>
+
+                </form>
+
+            </div>
+
+            <!--===========   Social   ===========-->
+
+
+            <div class="section__inputs social_details purple">
+                <div class="section__head">
+                    <div class="section__inputs__title">Social</div>
+                    <span class="show__list"><i class='bx bx-chevron-down list__icon'></i></span>
+                </div>
+                <form method="get" action="" class="form__content bd-grid  ">
+
+                    <div class="row mt-3">
+
+                        <div class="section__item form-group col-md-8">
+                            <label for="linkedin">LinkedIn:</label>
+                            <input type="text" id="linkedin" name="linkedin" class="form-control"
+                                   placeholder="Enter LinkedIn">
+                        </div>
+                        <div class="section__item form-group col-md-4">
+                            <label for="LinkedIn_Link">Link:</label>
+                            <input type="url" id="LinkedIn_Link" name="LinkedIn_link" class="form-control"
+                                   placeholder="Add Link">
+                        </div>
+
+
+                    </div>
+                    <div class="row mt-3">
+
+                        <div class="section__item form-group col-md-8">
+                            <label for="facebook">Facebook:</label>
+                            <input type="text" id="facebook" name="facebook" class="form-control"
+                                   placeholder="Enter Facebook">
+                        </div>
+
+                        <div class="section__item form-group col-md-4">
+                            <label for="Facebook_Link">Link:</label>
+                            <input type="url" id="Facebook_Link" name="Facebook_Link" class="form-control"
+                                   placeholder="Add Link">
+                        </div>
+
+
+                    </div>
+                    <div class="row mt-3">
+
+                        <div class="section__item form-group col-md-8">
+                            <label for="instagram">Instagram:</label>
+                            <input type="text" id="instagram" name="instagram" class="form-control"
+                                   placeholder="Enter Instagram">
+                        </div>
+
+                        <div class="section__item form-group col-md-4">
+                            <label for="Instagram_Link">Link:</label>
+                            <input type="url" id="Instagram_Link" name="Instagram_Link" class="form-control"
+                                   placeholder="Add Link">
+                        </div>
+
+
+                    </div>
+                    <button type="submit" class="save ">save</button>
+
+                </form>
+            </div>
+
+            <!--===========  Profile Description   ===========-->
+
+            <div class="section__inputs profile__details purple">
+                <div class="section__head">
+                    <div class="section__inputs__title">Profile Description</div>
+                    <span class="show__list"><i class='bx bx-chevron-down list__icon'></i></span>
+                </div>
+                <div class="row mt-3 ">
+
+                    <form method="get" action="" class="form__content ">
+
+
+                        <div class="section__item bd-grid ">
+                            <label for="profile-description">Profile Description:</label>
+                            <textarea id="profile-description" name="profile-description" class="form-control"
+                                      placeholder="I am a person, responsible with their work during working hours. Finish various technical and higher studies at large universi"></textarea>
+                        </div>
+                        <button type="submit" class="save">save</button>
+
+                    </form>
+                </div>
+            </div>
+
+            <!--===========  languages   ===========-->
+
+            <div class="section__inputs language__details purple">
+                <div class="section__head">
+                    <div class="section__inputs__title"> Languages</div>
+                    <span class="show__list"><i class='bx bx-chevron-down list__icon'></i></span>
+                </div>
+                <form method="get" action="" class="form__content bd-grid ">
+
+                    <div class="section__item">
+                        <label for="language-1">Language 1:</label>
+                        <input type="text" id="language-1" name="language-1"
+                               class="form-control form-group col-md-8 ">
+                    </div>
+
+                    <div class="section__item">
+                        <label for="language-2">Language 2:</label>
+                        <input type="text" id="language-2" name="language-2" class="form-control">
+                    </div>
+                    <div class="section__item">
+                        <label for="language-3">Language 3:</label>
+                        <input type="text" id="language-3" name="language-3" class="form-control">
+                    </div>
+
+                    <button type="submit" class="save ">save</button>
+
+                </form>
+            </div>
+
+            <!--===========  Education    ===========-->
+
+            <div class="section__inputs profile__details purple">
+                <div class="section__head">
+                    <div class="section__inputs__title">Education</div>
+                    <span class="show__list"><i class='bx bx-chevron-down list__icon'></i></span>
+                </div>
+
+                <form method="get" action="" class="form__content bd-grid ">
+
+                    <div class="section__item">
+                        <label for="college-name-1">College Name 1:</label>
+                        <input type="text" id="college-name-1" class="form-control">
+                    </div>
+                    <div class="section__item">
+                        <label for="education-1">Education 1:</label>
+                        <input type="text" id="education-1" class="form-control">
+                    </div>
+
+                    <div class="row mt-3">
+
+                        <div class="section__item form-group col-md-6">
+                            <label for="education-1-year">Education 1 Year:</label>
+                            <input type="text" id="education-1-year" class="form-control">
+                        </div>
+
+                        <div class="section__item form-group col-md-6">
+                            <label for="education-place-1">Education Place :</label>
+                            <input type="text" id="education-place-1" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="section__item row mt-3">
+                        <label for="education-1-description">Education 1 Description:</label>
+                        <textarea id="education-1-description" class="form-control"></textarea>
+                    </div>
+
+                    <div class="section__item">
+                        <label for="college-name-2">College Name 2:</label>
+                        <input type="text" id="college-name-2" class="form-control">
+                    </div>
+                    <div class="section__item">
+                        <label for="education-2">Education 2:</label>
+                        <input type="text" id="education-2" class="form-control">
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="section__item form-group col-md-6">
+                            <label for="education-2-year">Education 2 Year:</label>
+                            <input type="text" id="education-2-year" class="form-control">
+                        </div>
+                        <div class="section__item form-group col-md-6">
+                            <label for="education-place-2">Education Place</label>
+                            <input type="text" id="education-place-2" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="section__item">
+                        <label for="education-2-description">Education 2 Description:</label>
+                        <textarea id="education-2-description" class="form-control"></textarea>
+                    </div>
+
+                    <button type="submit" class="save ">save</button>
+
+                </form>
+
+            </div>
+
+
+            <!--===========  Experience    ===========-->
+
+            <div class="section__inputs profile__details purple">
+                <div class="section__head">
+                    <div class="section__inputs__title">Experience</div>
+                    <span class="show__list"><i class='bx bx-chevron-down list__icon'></i></span>
+                </div>
+                <div class="row mt-3">
+
+                    <form method="get" action="" class="form__content bd-grid ">
+                        <div class="section__item">
+                            <label for="experience-1-title">Experience 1 Title:</label>
+                            <input type="text" id="experience-1-title" class="form-control">
+                        </div>
+
+                        <div class="section__item">
+                            <label for="experience-1-company">Experience 1 Company:</label>
+                            <input type="text" id="experience-1-company" class="form-control">
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="section__item form-group col-md-4">
+                                <label for="experience-1-year">Experience 1 Year:</label>
+                                <input type="text" id="experience-1-year" class="form-control">
+                            </div>
+                            <div class="section__item form-group col-md-6">
+                                <label for="experience-place-1">Experience Place :</label>
+                                <input type="text" id="experience-place-1" class="form-control">
+                            </div>
+
+                        </div>
+                        <div class="section__item">
+                            <label for="experience-1-description">Experience 1 Description:</label>
+                            <textarea id="experience-1-description" class="form-control"></textarea>
+                        </div>
+                        <hr>
+
+
+                        <div class="section__item">
+                            <label for="experience-2-title">Experience 2 Title:</label>
+                            <input type="text" id="experience-2-title" class="form-control">
+                        </div>
+
+                        <div class="section__item">
+                            <label for="experience-2-company">Experience 2 Company:</label>
+                            <input type="text" id="experience-2-company" class="form-control">
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="section__item form-group col-md-4">
+                                <label for="experience-2-year">Experience 2 Year:</label>
+                                <input type="text" id="experience-2-year" class="form-control">
+                            </div>
+                            <div class="section__item form-group col-md-6">
+                                <label for="experience-place-2">Experience Place :</label>
+                                <input type="text" id="experience-place-2" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="section__item">
+                            <label for="experience-2-description">Experience 2 Description:</label>
+                            <textarea id="experience-2-description" class="form-control"></textarea>
+                        </div>
+
+
+                        <button type="submit" class="save ">save</button>
+
+                    </form>
+                </div>
+            </div>
+
+            <!--===========  Certificates  ===========-->
+
+            <div class="section__inputs profile__details purple">
+                <div class="section__head">
+                    <div class="section__inputs__title">Certificates</div>
+                    <span class="show__list"><i class='bx bx-chevron-down list__icon'></i></span>
+                </div>
+                <div class="row mt-3">
+
+                    <form method="get" action="" class="form__content ">
+
+
+                        <div class="section__item">
+                            <label for="certificate-name-1">Certificate Name:</label>
+                            <input type="text" id="certificate-name-1" class="form-control">
+                        </div>
+                        <div class="section__item form-group col-md-6">
+                            <label for="Certificate-1-Link">Certificate Link:</label>
+                            <input type="url" id="Certificate-1-Link" class="form-control">
+                        </div>
+                        <div class="section__item">
+                            <label for="certificate-1-description">certificate 1 Description:</label>
+                            <textarea id="certificate-1-description" class="form-control"></textarea>
+                        </div>
+                        <hr>
+                        <div class="section__item">
+                            <label for="certificate-name-2">Certificate Name:</label>
+                            <input type="text" id="certificate-name-2" class="form-control">
+                        </div>
+                        <div class="section__item form-group col-md-6">
+                            <label for="certificate-2-Link">Certificate Link:</label>
+                            <input type="url" id="Certificate-2-Link" class="form-control">
+                        </div>
+                        <div class="section__item">
+                            <label for="certificate-2-description">certificate 2 Description:</label>
+                            <textarea id="certificate-2-description" class="form-control"></textarea>
+                        </div>
+
+                        <button type="submit" class="save">save</button>
+
+                    </form>
+                </div>
+            </div>
+
+            <!--===========  skills    ===========-->
+
+            <div class="section__inputs profile__details purple">
+                <div class="section__head">
+                    <div class="section__inputs__title">Skills</div>
+                    <span class="show__list"><i class='bx bx-chevron-down list__icon'></i></span>
+                </div>
+                <div class="row mt-3">
+
+                    <form method="get" action="" class="form__content bd-grid purple">
+
+                        <div class="section__item form-group col-md-8">
+                            <label for="skill-1">Skill 1:</label>
+                            <input type="text" id="skill-1" class="form-control">
+                        </div>
+
+                        <div class="section__item form-group col-md-8">
+                            <label for="skill-2">Skill 2:</label>
+                            <input type="text" id="skill-2" class="form-control">
+                        </div>
+
+                        <div class="section__item form-group col-md-8">
+                            <label for="skill-3">Skill 3:</label>
+                            <input type="text" id="skill-3" class="form-control">
+                        </div>
+
+                        <div class="section__item form-group col-md-8">
+                            <label for="skill-4">Skill 4:</label>
+                            <input type="text" id="skill-4" class="form-control">
+                        </div>
+
+                        <div class="section__item form-group col-md-8">
+                            <label for="skill-5">Skill 5:</label>
+                            <input type="text" id="skill-5" class="form-control">
+                        </div>
+
+                        <div class="section__item form-group col-md-8">
+                            <label for="skill-6">Skill 6:</label>
+                            <input type="text" id="skill-6" class="form-control">
+                        </div>
+
+                        <div class="section__item form-group col-md-8">
+                            <label for="skill-7">Skill 7:</label>
+                            <input type="text" id="skill-7" class="form-control">
+                        </div>
+
+                        <div class="section__item form-group col-md-8">
+                            <label for="skill-8">Skill 8:</label>
+                            <input type="text" id="skill-8" class="form-control">
+                        </div>
+
+
+                        <button type="submit" class="save ">save</button>
+
+                    </form>
+                </div>
+            </div>
+
+            <!--===========  Interests    ===========-->
+
+            <div class="section__inputs profile__details purple">
+                <div class="section__head">
+                    <div class="section__inputs__title">Interests</div>
+                    <span class="show__list"><i class='bx bx-chevron-down list__icon'></i></span>
+                </div>
+                <div class="row mt-3">
+                    <form method="get" action="" class="form__content bd-grid ">
+
+                        <div class="section__item form-group col-md-8">
+                            <label for="interest-1">Interest 1:</label>
+                            <input type="text" id="interest-1" class="form-control">
+                        </div>
+
+                        <div class="section__item form-group col-md-8">
+                            <label for="interest-2">Interest 2:</label>
+                            <input type="text" id="interest-2" class="form-control">
+                        </div>
+
+                        <div class="section__item form-group col-md-8">
+                            <label for="interest-3">Interest 3:</label>
+                            <input type="text" id="interest-3" class="form-control">
+                        </div>
+
+                        <div class="section__item form-group col-md-8">
+                            <label for="interest-4">Interest 4:</label>
+                            <input type="text" id="interest-4" class="form-control">
+                        </div>
+
+
+                        <button type="submit" class="save ">save</button>
+
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </aside>
+
+    <!--====================          resume        ====================-->
+
+    <main class="main-1 bd-container left__container ">
+        <! - - ALL elements within this div, is generated in PDF -->
+        <div class="resume a4-container " id="area-cv">
+
+            <!--====================          resume  left      ====================-->
+
+            <div class="resume__lft ">
+
+                <!--========== HOME ==========-->
+
+                <section class="home padding" id="home">
+                    <div class="home_container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="" alt="" class="home__img nonDisplay_img " id="home__img">
+
+                            <h1 class="home__title" id="full-name-display"></h1>
+                            <h3 class="home__profession" id="profession-display"></h3>
+
+                            <!--Button to download your CV saved in the pdf folder. Available for mobile-->
+                            <div>
+                                <a download="" href="assets/PDF/myResume.pdf" class="home_bottom_movil">Download</a>
+                            </div>
+                        </div>
+
+                        <div class="home__address bd-grid">
+                        <span class="home__information">
+                            <i class='bx bxs-map home__icon'></i> <span
+                                id="address-display"></span>
+                        </span>
+                            <span class="home__information">
+                            <i class='bx bxs-envelope home__icon'></i> <sapn id="email-display"> </sapn>
+                        </span>
+                            <span class="home__information">
+                            <i class='bx bxs-phone home__icon'></i>  <span id="phone-display"></span>
+                        </span>
+                        </div>
+                    </div>
+
+                    <!-- Theme change button -->
+
+                    <i class='bx bx-moon chang-theme' title="Theme" id="theme-button"></i>
+
+                    <!--Button to generate and download the pdf. Available for desktop.-->
+
+                    <i class='bx bx-download generate-pdf ' title="Generate PDF" id="resume-button"></i>
+
+
+                </section>
+
+                <!--========== SOCIAL ==========-->
+
+                <section class="social section">
+                    <h2 class="section-title">SOCIAL</h2>
+                    <div class="social__container bd-grid">
+                        <div class="link">
+                            <a href="" target="_blank" class="social__link linkedin_link">
+                                <i class='bx bxl-linkedin-square social__icon icon_link'></i>
+                            </a> <span id="linkedin-display" class="link_value"></span>
+                        </div>
+
+                        <div class="link">
+
+                            <a href="" target="_blank" class="social__link facebook_link ">
+                                <i class='bx bxl-facebook-square social__icon icon_link'></i>
+                            </a>
+                            <span
+                                    id="facebook-display" class="link_value"></span>
+                        </div>
+
+                        <div class="link">
+
+                            <a href="" target="_blank" class="social__link instagram_link">
+                                <i class='bx bxl-instagram-alt social__icon icon_link'></i>
+                            </a>
+                            <span
+                                    id="instagram-display" class="link_value"></span>
+
+                        </div>
+
+
+                    </div>
+                </section>
+
+                <!--========== PROFILE ==========-->
+
+                <section class="profile section">
+                    <h2 class="section-title">PROFILE</h2>
+                    <div class="profile__description section bd-grid" id="profile-description-display">
+                    </div>
+                </section>
+
+                <!-- ========== LANGUAGES ========== -->
+                <section class="language section" id="language">
+                    <h2 class="section-title">LANGUAGES</h2>
+                    <div class="language__container">
+                        <Ul class="language__content bd-grid">
+                            <li class="language__name">
+                                <span class="circle"></span>
+                                <span id="language-1-display" class="circle-value"></span>
+
+                            </li>
+                            <li class="language__name">
+                                <span class="circle "></span>
+                                <span id="language-2-display" class="circle-value"> </span>
+                            </li>
+                            <li class="language__name">
+                                <span class="circle"></span>
+                                <span id="language-3-display" class="circle-value"></span>
+
+                            </li>
+
+                        </Ul>
+
+                    </div>
+                </section>
+                <!--========== SKILLS ==========-->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">SKILLS</h2>
+                    <div class="skill__content ">
+                        <ul class="skills__data bd-grid">
+                            <li class="skill__name">
+                                <span class="circle"></span> <span id="skill-1-display" class="circle-value"></span>
+                            </li>
+                            <li class="skill__name">
+                                <span class="circle"></span> <span id="skill-2-display" class="circle-value"></span>
+                            </li>
+                            <li class="skill__name">
+                                <span class="circle"></span> <span id="skill-3-display" class="circle-value"></span>
+                            </li>
+                            <li class="skill__name">
+                                <span class="circle"></span> <span id="skill-4-display" class="circle-value"></span>
+                            </li>
+
+
+                            <li class="skill__name">
+                                <span class="circle"></span> <span id="skill-5-display" class="circle-value"></span>
+                            </li>
+                            <li class="skill__name">
+                                <span class="circle"></span> <span id="skill-6-display" class="circle-value"></span>
+                            </li>
+                            <li class="skill__name">
+                                <span class="circle"></span> <span id="skill-7-display" class="circle-value"></span>
+                            </li>
+                            <li class="skill__name">
+                                <span class="circle"></span> <span id="skill-8-display" class="circle-value"></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </section>
+
+            </div>
+
+            <!--====================          resume   right     ====================-->
+
+            <div class="resume__right">
+
+                <!--========== EDUCATION ==========-->
+
+                <section class="education section" id="education">
+                    <h2 class="section-title">EDUCATION</h2>
+                    <div class="education__container bd-grid">
+                        <div class="education__content">
+                            <div class="education__item">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class=" education__studies" id="college-name-1-display"></h3>
+                                <div class="shift">
+
+                            <span class="education__title" id="education-1-display">
+                            </span>
+                                    <span class="education__year"> <span
+                                            id="education-1-year-display"> </span>  <span
+                                            class="education__place"
+                                            id="education-place-1-display"> </span></span>
+                                    <span class="education__description"
+                                          id="education-1-description-display"></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="education__content">
+                            <div class="education__item">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class=" education__studies" id="college-name-2-display">
+
+                                </h3>
+                                <div class="shift">
+                                <span class="education__title" id="education-2-display">
+
+                            </span>
+                                    <span class="education__year"> <span
+                                            id="education-2-year-display"> </span>  <span class="education__place"
+                                                                                          id="education-place-2-display"> </span></span>
+                                    <span class="education__description"
+                                          id="education-2-description-display"></span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+                <!--========== EXPERIENCE ==========-->
+
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">EXPERIENCE</h2>
+                    <div class="experience__container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__item">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title" id="experience-1-title-display">
+
+                                </h3>
+                                <div class="shift">
+
+                            <span class="experience__company" id="experience-1-company-display">
+
+                            </span>
+                                    <span class="experience__year"><span
+                                            id="experience-1-year-display"> </span> <span
+                                            class="experience__place"
+                                            id="experience-place-1-display"></span></span>
+                                    <span class="experience__description" id="experience-1-description-display">
+                            </span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="experience__content">
+                            <div class="experience__item">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title" id="experience-2-title-display">
+
+                                </h3>
+                                <div class="shift">
+
+                            <span class="experience__company" id="experience-2-company-display">
+
+                            </span>
+                                    <span class="experience__year"> <span
+                                            id="experience-2-year-display"> </span> <span
+                                            class="experience__place"
+                                            id="experience-place-2-display"></span></span>
+                                    <span class="experience__description" id="experience-2-description-display">
+
+                            </span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!--========== CERTIFICATES ==========-->
+                <section class="certificate section" id="certificate">
+                    <h2 class="section-title">CERTIFICATES</h2>
+                    <div class="certificate__container bd-grid">
+                        <div class="certificate__content">
+                            <span class="certificate_link"> <h3 class="certificate__title link_value"
+                                                                id="certificate-name-1-display"></h3>
+                               <a href="" id="certificate-1-link-display" class="icon_link"> <i
+                                       class='bx bx-link-external link_icon'></i></a></span>
+                            <p class="certificate__description" id="certificate-1-description-display"></p>
+
+                        </div>
+                        <div class="certificate__content">
+                            <span class="certificate_link"> <h3 class="certificate__title link_value"
+                                                                id="certificate-name-2-display"></h3>
+                                <a href="" id="certificate-2-link-display" class="icon_link"><i
+                                        class='bx bx-link-external link_icon'></i></a></span>
+
+                            <p class="certificate__description" id="certificate-2-description-display">
+
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+                <!-- ========== INTERESTS ========== -->
+
+                <section class="interest section" id="interest">
+                    <h2 class="section-title">INTERESTS</h2>
+
+                    <div class="interest__container ">
+                        <ul class="interest__content bd-grid">
+                            <li class="interest__name">
+                                <span class="circle"></span> <span id="interest-1-display" class="circle-value"></span>
+                            </li>
+                            <li class="interest__name">
+                                <span class="circle"></span> <span id="interest-2-display" class="circle-value"></span>
+                            </li>
+                            <li class="interest__name">
+                                <span class="circle"></span> <span id="interest-3-display" class="circle-value"></span>
+                            </li>
+                            <li class="interest__name">
+                                <span class="circle"></span> <span id="interest-4-display" class="circle-value"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <!--===========  scroll top   ===========-->
+
+    <a href="#" class="scrollTop" id="scrollTop">
+        <i class='bx bx-up-arrow-alt scrollTop__icon'></i>
+
+    </a>
+</div>
+
+
+<!--===========  HTML2PDF   ===========-->
+
+<script src="JS/html2pdf.bundle.min.js"></script>
+
+<!--===========  MAIN JS   ===========-->
+<script src="JS/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>
